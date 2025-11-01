@@ -46,7 +46,6 @@
     "cmdk": "1.0.4",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.5.1",
-    "geist": "latest",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
     "motion": "latest",
@@ -61,6 +60,8 @@
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
+    "tw-animate": "^1.0.1",
+    "tw-animate-css": "latest",
     "vaul": "^0.9.6",
     "zod": "^3.24.1"
   },
@@ -69,7 +70,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "postcss": "^8.5",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.1.9",
     "typescript": "^5"
   }
 }

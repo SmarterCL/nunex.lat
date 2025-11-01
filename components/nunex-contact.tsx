@@ -4,102 +4,107 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function NunexContact() {
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left: Info */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-8">Contáctanos</h2>
-            <p className="text-lg text-neutral-600 mb-12 leading-relaxed">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
+              Contáctanos
+            </h2>
+            <p className="text-lg text-gray-700 mb-12 leading-relaxed font-medium">
               Estamos disponibles para consultas y asesoramiento profesional. Accede a servicios de consultoría global
               con 15+ años de experiencia.
             </p>
 
             <div className="space-y-6">
-              {/* Phone */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Phone size={20} className="text-neutral-900" />
+              {/* Phone - Chile */}
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Phone size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-neutral-900">Teléfono</p>
-                  <a href="tel:+549112656982" className="text-neutral-600 hover:text-neutral-900">
-                    +54 9 11 2656-9822
-                  </a>
-                  <br />
-                  <a href="tel:+549262251729" className="text-neutral-600 hover:text-neutral-900">
-                    +54 9 262 251-7297
+                  <p className="font-semibold text-gray-900">WhatsApp Chile</p>
+                  <a
+                    href="https://wa.me/56979540471"
+                    className="text-blue-600 hover:text-purple-600 transition-colors font-medium"
+                  >
+                    +56 979 540 471
                   </a>
                 </div>
               </div>
 
               {/* Email */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail size={20} className="text-neutral-900" />
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <Mail size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-neutral-900">Email</p>
-                  <a href="mailto:ramon@proconsul.com.ar" className="text-neutral-600 hover:text-neutral-900">
-                    ramon@proconsul.com.ar
+                  <p className="font-semibold text-gray-900">Email</p>
+                  <a
+                    href="mailto:comercial@nunex.lat"
+                    className="text-purple-600 hover:text-pink-600 transition-colors font-medium"
+                  >
+                    comercial@nunex.lat
                   </a>
                 </div>
               </div>
 
               {/* Location */}
-              <div className="flex gap-4">
-                <div className="w-12 h-12 bg-neutral-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <MapPin size={20} className="text-neutral-900" />
+              <div className="flex gap-4 group">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
+                  <MapPin size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-neutral-900">Ubicación</p>
-                  <p className="text-neutral-600">Argentina | Servicio Global</p>
+                  <p className="font-semibold text-gray-900">Dirección</p>
+                  <p className="text-gray-700 font-medium">Conde del Maule 4364, Depto #26</p>
+                  <p className="text-gray-700 font-medium">Estación Central, Santiago, Chile</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right: Form */}
-          <div className="bg-neutral-50 rounded-2xl p-8">
+          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-2 border-purple-200">
             <form className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-neutral-900 mb-2">Tu Nombre</label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Tu Nombre</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:border-neutral-900 transition-colors"
+                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-600 transition-colors bg-white font-medium"
                   placeholder="Nombre completo"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-900 mb-2">Tu Email</label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Tu Email</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:border-neutral-900 transition-colors"
+                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-600 transition-colors bg-white font-medium"
                   placeholder="tu@email.com"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-900 mb-2">Asunto</label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Asunto</label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:border-neutral-900 transition-colors"
+                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-600 transition-colors bg-white font-medium"
                   placeholder="¿Qué necesitas?"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-neutral-900 mb-2">Tu Mensaje</label>
+                <label className="block text-sm font-semibold text-gray-900 mb-2">Tu Mensaje</label>
                 <textarea
-                  className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:outline-none focus:border-neutral-900 transition-colors h-24 resize-none"
+                  className="w-full px-4 py-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-600 transition-colors h-24 resize-none bg-white font-medium"
                   placeholder="Cuéntanos sobre tu proyecto..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-neutral-900 text-white py-3 rounded-lg font-medium hover:bg-neutral-800 transition-colors"
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105"
               >
                 Enviar Mensaje
               </button>
