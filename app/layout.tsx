@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: 'NUNEX | Trading, Financiamiento y Blockchain Corporativo',
     template: '%s | NUNEX Ecosystem'
   },
-  description: 'Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa. Gestión de activos transparente y segura en Chile y Argentina.',
+  description: 'Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa. Gestión segura en Chile y Argentina.',
   keywords: [
     'Consultoría Financiera', 
     'Blockchain Corporativa', 
