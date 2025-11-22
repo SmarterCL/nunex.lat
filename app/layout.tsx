@@ -17,9 +17,64 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "NUNEX | Trading, Financiamiento y Blockchain para Empresas",
+  description: "Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa. Gestión de activos transparente y segura en Chile, Argentina y el mundo.",
+  keywords: [
+    // Generales
+    "Consultoría Financiera",
+    "Gestión de Capital",
+    "Financiamiento Empresas",
+    "Inversiones Corporativas",
+    "Trading Forex",
+    "EUR/USD",
+    "Asesoría de Negocios",
+    // Tecnología
+    "Blockchain Corporativa",
+    "Tokenización de Activos",
+    "Smart Contracts",
+    "Contratos Inteligentes",
+    "SmarterContract",
+    "Stablecoins Empresas",
+    "Web3 Latam",
+    "Transformación Digital Financiera",
+    // Geolocalización
+    "Consultora Financiera Santiago",
+    "Inversiones Chile",
+    "Financiamiento Argentina",
+    "Negocios Internacionales Latam",
+    "NUNEX Chile",
+    "NUNEX Argentina",
+  ],
+  authors: [{ name: "NUNEX", url: "https://nunex.lat" }],
+  creator: "NUNEX",
+  publisher: "NUNEX",
+  openGraph: {
+    title: "NUNEX | Trading, Financiamiento y Blockchain para Empresas",
+    description: "Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa. Gestión de activos transparente y segura en Chile, Argentina y el mundo.",
+    url: "https://nunex.lat",
+    siteName: "NUNEX",
+    locale: "es_CL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NUNEX | Trading, Financiamiento y Blockchain para Empresas",
+    description: "Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "google-site-verification-code",
+  },
 }
 
 export default function RootLayout({
@@ -28,7 +83,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <style>{`
 html {
