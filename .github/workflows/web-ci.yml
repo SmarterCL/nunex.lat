@@ -18,6 +18,8 @@ jobs:
   build-web:
     name: Build Dashboard
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout code

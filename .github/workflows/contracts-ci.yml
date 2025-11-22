@@ -13,6 +13,8 @@ jobs:
   test-contracts:
     name: Compile & Test Solidity
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     defaults:
       run:
         working-directory: ./contracts
