@@ -1,26 +1,32 @@
 "use client"
 
+import { Linkedin } from "lucide-react"
+
 export default function NunexTeam() {
   const team = [
     {
       name: "Domingo Ramón Núñez",
       role: "Fundador & Director Ejecutivo",
       image: "/professional-man-45-years-old-business-executive-s.jpg",
+      linkedin: null,
     },
     {
       name: "Carlos Velasco",
       role: "Director de Trading",
       image: "/professional-businessman-50-years-experienced-trad.jpg",
+      linkedin: null,
     },
     {
       name: "María Fernández",
       role: "Directora de Consultoría",
       image: "/professional-businesswoman-45-years-corporate-exec.jpg",
+      linkedin: null,
     },
     {
-      name: "Roberto Silva",
+      name: "Pedro J Zaffuto",
       role: "Especialista Blockchain",
-      image: "/professional-man-48-years-tech-specialist-blockcha.jpg",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGPlVLU4lzLRQ/profile-displayphoto-crop_800_800/B4EZmg2jtbGoAI-/0/1759340282551?e=1765411200&v=beta&t=xaAUpc0uPfMt_tU3qahI6NZ0r3qhXMOUPBEW3iWnHAU",
+      linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
   ]
 
@@ -52,6 +58,24 @@ export default function NunexTeam() {
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
                 <p className="text-blue-600 font-semibold text-sm">{member.role}</p>
+                <div className="mt-3 flex items-center">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                      <span className="text-sm">LinkedIn</span>
+                    </a>
+                  ) : (
+                    <div className="flex items-center gap-2 text-gray-400">
+                      <Linkedin className="w-4 h-4" />
+                      <span className="text-sm">LinkedIn</span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}

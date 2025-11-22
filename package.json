@@ -6,7 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "predeploy": "npm run lint && npm run build",
+    "deploy:check": "npm run predeploy && echo '✓ Ready for production deployment'"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
