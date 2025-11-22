@@ -34,9 +34,9 @@ jobs:
       - name: Compile Contracts
         run: npx hardhat compile
         env:
-          # Variables falsas para que compile sin errores de .env
-          PRIVATE_KEY: "0000000000000000000000000000000000000000000000000000000000000000"
-          INFURA_API_KEY: "test"
+          # Dummy variables for CI builds - do not use in production
+          PRIVATE_KEY: "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+          INFURA_API_KEY: "dummy-infura-key-for-ci-builds"
 
       - name: Run Tests
         run: npx hardhat test

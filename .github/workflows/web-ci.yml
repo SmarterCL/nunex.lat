@@ -50,7 +50,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Lint Code (Calidad de código)
+      - name: Lint Code
         run: pnpm run lint
         continue-on-error: true
 

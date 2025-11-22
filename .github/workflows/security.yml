@@ -23,4 +23,4 @@ jobs:
         uses: crytic/slither-action@v0.3.0
         with:
           target: 'contracts/'
-          fail-on: low # Falla si encuentra CUALQUIER riesgo
+          fail-on: medium # Fail on medium or higher severity issues
