@@ -18,7 +18,7 @@ export default function NunexTeam() {
       image: "/professional-businesswoman-45-years-corporate-exec.jpg",
     },
     {
-      name: "Roberto Silva",
+      name: "Pedro J Zaffuto",
       role: "Especialista Blockchain",
       image: "/professional-man-48-years-tech-specialist-blockcha.jpg",
     },
