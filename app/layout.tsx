@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Open_Sans, Roboto } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import WhatsAppFloat from "@/components/whatsapp-float"
 import "./globals.css"
 
 const openSans = Open_Sans({
@@ -38,6 +39,7 @@ html {
       </head>
       <body className={`${openSans.variable} ${roboto.variable}`}>
         {children}
+        <WhatsAppFloat />
         <Analytics />
       </body>
     </html>
