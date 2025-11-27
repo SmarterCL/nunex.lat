@@ -18,9 +18,46 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: {
+    default: 'NUNEX | Trading, Financiamiento y Blockchain Corporativo',
+    template: '%s | NUNEX Ecosystem'
+  },
+  description: 'Potencia tu capital con NUNEX. Consultoría experta en Trading EUR/USD, Financiamiento y Blockchain Corporativa. Gestión segura en Chile y Argentina.',
+  keywords: [
+    'Consultoría Financiera', 
+    'Blockchain Corporativa', 
+    'Trading EUR/USD', 
+    'Financiamiento Empresas', 
+    'Smart Contracts', 
+    'Tokenización', 
+    'NUNEX', 
+    'Chile', 
+    'Argentina'
+  ],
+  authors: [{ name: 'NUNEX Team', url: 'https://nunex.lat' }],
+  creator: 'NUNEX Smarter Ecosystem',
+  openGraph: {
+    type: 'website',
+    locale: 'es_CL',
+    url: 'https://nunex.lat',
+    title: 'NUNEX | Plataforma Global de Consultoría y Blockchain',
+    description: 'Accede a financiamiento inteligente y trading automatizado con tecnología Blockchain. 15+ años de experiencia gestionando capitales.',
+    siteName: 'NUNEX',
+    images: [
+      {
+        url: '/images/og-image-nunex.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'NUNEX Ecosistema Financiero',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NUNEX | Finanzas & Blockchain',
+    description: 'Consultoría corporativa, Trading y Financiamiento con tecnología SmarterContract.',
+    images: ['/images/twitter-image-nunex.jpg'],
+  },
 }
 
 export default function RootLayout({
@@ -29,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <style>{`
 html {
