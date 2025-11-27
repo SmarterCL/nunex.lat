@@ -1,26 +1,32 @@
 "use client"
 
+import { Linkedin } from "lucide-react"
+
 export default function NunexTeam() {
   const team = [
     {
       name: "Domingo Ramón Núñez",
       role: "Fundador & Director Ejecutivo",
       image: "/professional-man-45-years-old-business-executive-s.jpg",
+      linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
     {
       name: "Carlos Velasco",
       role: "Director de Trading",
       image: "/professional-businessman-50-years-experienced-trad.jpg",
+      linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
     {
       name: "María Fernández",
       role: "Directora de Consultoría",
       image: "/professional-businesswoman-45-years-corporate-exec.jpg",
+      linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
     {
-      name: "Roberto Silva",
+      name: "Pedro J. Zaffuto Ruiz",
       role: "Especialista Blockchain",
-      image: "/professional-man-48-years-tech-specialist-blockcha.jpg",
+      image: "/pz_linkedin.png",
+      linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
   ]
 
@@ -52,6 +58,23 @@ export default function NunexTeam() {
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-900 mb-1">{member.name}</h3>
                 <p className="text-blue-600 font-semibold text-sm">{member.role}</p>
+                <div className="mt-3">
+                  {member.linkedin ? (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                      aria-label={`LinkedIn de ${member.name}`}
+                    >
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  ) : (
+                    <div className="inline-flex items-center gap-2 text-gray-300">
+                      <Linkedin className="w-5 h-5" />
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
           ))}
