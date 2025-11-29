@@ -1,0 +1,44 @@
+name: SmarterContract CI
+
+# Se activa cuando alguien hace push a main o abre un Pull Request
+on:
+  push:
+    branches: [ "main", "develop" ]
+    paths:
+      - 'contracts/**' # Solo se activa si tocan la carpeta contracts
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-contracts:
+    name: Compile & Test Solidity
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: ./contracts
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: './contracts/package-lock.json'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Compile Contracts
+        run: npx hardhat compile
+        env:
+          # Dummy variables for CI builds - do not use in production
+          PRIVATE_KEY: "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+          INFURA_API_KEY: "dummy-infura-key-for-ci-builds"
+
+      - name: Run Tests
+        run: npx hardhat test

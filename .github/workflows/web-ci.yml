@@ -1,0 +1,62 @@
+name: SmarterOS Web CI
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+    paths:
+      - '**.ts'
+      - '**.tsx'
+      - '**.js'
+      - '**.jsx'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'pnpm-lock.yaml'
+      - 'tsconfig.json'
+      - 'next.config.mjs'
+
+jobs:
+  build-web:
+    name: Build Dashboard
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint Code
+        run: pnpm run lint
+        continue-on-error: true
+
+      - name: Build Project
+        run: pnpm run build
+        env:
+          CI: true

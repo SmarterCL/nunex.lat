@@ -1,0 +1,29 @@
+name: Smart Contract Security Audit
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'contracts/**'
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    defaults:
+      run:
+        working-directory: ./contracts
+        
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Slither
+        uses: crytic/slither-action@v0.3.0
+        with:
+          target: 'contracts/'
+          fail-on: medium # Fail on medium or higher severity issues
