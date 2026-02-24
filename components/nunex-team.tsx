@@ -7,7 +7,7 @@ export default function NunexTeam() {
     {
       name: "Domingo Ramón Núñez",
       role: "Fundador & Director Ejecutivo",
-      image: "/professional-man-45-years-old-business-executive-s.jpg",
+      image: "https://rjfcmmzjlguiititkmyh.supabase.co/storage/v1/object/public/nunex/Ramon-Nunex.jpeg",
       linkedin: "https://www.linkedin.com/in/pedrozaffuto-cl/",
     },
     {

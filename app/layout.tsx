@@ -18,9 +18,8 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "Nunex - Consultoría Financiera Internacional",
+  description: "Sistema de consultoría financiera y trading internacional.",
 }
 
 export default function RootLayout({
