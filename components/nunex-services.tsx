@@ -1,36 +1,56 @@
 "use client"
 
-import { TrendingUp, Coins, Users, FileText } from "lucide-react"
+import { Wind, Server, HandCoins, Building2, Coins, Calculator, Scale, ShieldCheck } from "lucide-react"
 
 export default function NunexServices() {
   const services = [
     {
-      icon: TrendingUp,
-      title: "Trading EUR/USD",
-      description:
-        "Análisis experto y estrategias de trading en pares de divisas principales. Operaciones optimizadas con tecnología blockchain.",
-      gradient: "from-blue-500 to-cyan-500",
+      icon: Wind,
+      title: "Energía Renovable",
+      description: "Desarrollo y gestión de Parques Eólicos y proyectos sustentables de alto impacto ambiental.",
+      gradient: "from-blue-600 to-cyan-400",
+    },
+    {
+      icon: Server,
+      title: "Datacenter & Minería",
+      description: "Infraestructura avanzada para Datacenters y operaciones de Minería Bitcoin optimizada.",
+      gradient: "from-indigo-600 to-purple-400",
+    },
+    {
+      icon: HandCoins,
+      title: "Asesoría ANR",
+      description: "Gestión experta en Aportes No Reembolsables para el crecimiento empresarial en Argentina.",
+      gradient: "from-green-600 to-emerald-400",
+    },
+    {
+      icon: Building2,
+      title: "Real Estate & Bodegas",
+      description: "Compra de propiedades de gran tamaño y desarrollo de bodegas boutique en Mendoza y Chile.",
+      gradient: "from-amber-600 to-orange-400",
     },
     {
       icon: Coins,
-      title: "Tokens Blockchain",
-      description:
-        "Asesoramiento integral en tokenización, inversión en cripto y tecnología descentralizada de nueva generación.",
-      gradient: "from-purple-500 to-pink-500",
+      title: "Venta de Oro",
+      description: "Operaciones seguras de compra y venta de oro físico con respaldo internacional.",
+      gradient: "from-yellow-600 to-amber-500",
     },
     {
-      icon: Users,
-      title: "Consultoría Corporativa",
-      description:
-        "Estrategias de negocio internacional, expansión global y estructura corporativa para empresas multinacionales.",
-      gradient: "from-orange-500 to-red-500",
+      icon: Calculator,
+      title: "Operaciones Contables",
+      description: "Servicios contables integrales para empresas con operaciones binacionales (CL/AR).",
+      gradient: "from-slate-700 to-slate-500",
     },
     {
-      icon: FileText,
-      title: "Créditos y Subsidios",
-      description:
-        "Acceso a las mejores líneas de financiamiento y fondos no reembolsables para proyectos de desarrollo.",
-      gradient: "from-green-500 to-teal-500",
+      icon: Scale,
+      title: "Asesoría Tributaria",
+      description: "Optimización fiscal y cumplimiento tributario para estructuras corporativas complejas.",
+      gradient: "from-blue-800 to-blue-500",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Ciberseguridad",
+      description: "Protección de infraestructura crítica y activos digitales bajo la dirección de Pedro Zaffuto.",
+      gradient: "from-red-600 to-rose-400",
     },
   ]
 
@@ -39,16 +59,16 @@ export default function NunexServices() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-            Nuestros Servicios
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 bg-clip-text text-transparent mb-6">
+            Bloques Comerciales
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto font-medium">
-            Soluciones integrales para tu éxito en mercados internacionales
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto font-semibold">
+            Verticales especializadas en activos reales y tecnología crítica
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (

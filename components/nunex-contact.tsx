@@ -17,49 +17,29 @@ export default function NunexContact() {
               con 15+ años de experiencia.
             </p>
 
-            <div className="space-y-6">
-              {/* Phone - Chile */}
-              <div className="flex gap-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
-                  <Phone size={20} className="text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">WhatsApp Chile</p>
-                  <a
-                    href="https://wa.me/56979540471"
-                    className="text-blue-600 hover:text-purple-600 transition-colors font-medium"
-                  >
-                    +56 979 540 471
-                  </a>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Phone - SCL */}
+              <div className="p-4 bg-white rounded-xl shadow-md border-l-4 border-blue-500">
+                <p className="text-xs font-black uppercase text-gray-400 mb-1">WhatsApp Santiago</p>
+                <a href="https://wa.me/56937558320" className="text-blue-600 font-bold text-lg">+56 9 3755 8320</a>
+              </div>
+
+              {/* Phone - MDZ */}
+              <div className="p-4 bg-white rounded-xl shadow-md border-l-4 border-amber-500">
+                <p className="text-xs font-black uppercase text-gray-400 mb-1">WhatsApp Mendoza</p>
+                <a href="https://wa.me/5492614567890" className="text-amber-600 font-bold text-lg">+54 9 261 456 7890</a>
+              </div>
+
+              {/* Phone - BUE */}
+              <div className="p-4 bg-white rounded-xl shadow-md border-l-4 border-purple-500">
+                <p className="text-xs font-black uppercase text-gray-400 mb-1">WhatsApp B. Aires</p>
+                <a href="https://wa.me/5491112345678" className="text-purple-600 font-bold text-lg">+54 9 11 1234 5678</a>
               </div>
 
               {/* Email */}
-              <div className="flex gap-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
-                  <Mail size={20} className="text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Email</p>
-                  <a
-                    href="mailto:comercial@nunex.lat"
-                    className="text-purple-600 hover:text-pink-600 transition-colors font-medium"
-                  >
-                    comercial@nunex.lat
-                  </a>
-                </div>
-              </div>
-
-              {/* Location */}
-              <div className="flex gap-4 group">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg group-hover:shadow-xl transition-shadow">
-                  <MapPin size={20} className="text-white" />
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-900">Dirección</p>
-                  <p className="text-gray-700 font-medium">Conde del Maule 4364, Depto #26</p>
-                  <p className="text-gray-700 font-medium">Estación Central, Santiago, Chile</p>
-                </div>
+              <div className="p-4 bg-blue-600 rounded-xl shadow-md border-l-4 border-blue-800">
+                <p className="text-xs font-black uppercase text-blue-200 mb-1">Email Corporativo</p>
+                <a href="mailto:hola@nunex.lat" className="text-white font-bold text-lg underline decoration-blue-400">hola@nunex.lat</a>
               </div>
             </div>
           </div>

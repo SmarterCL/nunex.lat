@@ -20,16 +20,16 @@ export default function NunexHeader() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-gray-700 hover:text-purple-600 transition-colors text-sm font-semibold">
-            Servicios
+          <a href="#services" className="text-gray-700 hover:text-blue-600 transition-colors text-sm font-bold uppercase tracking-tight">
+            Verticales
           </a>
-          <a href="#ecosystem" className="text-gray-700 hover:text-purple-600 transition-colors text-sm font-semibold">
-            Ecosistema
+          <a href="#properties" className="text-gray-700 hover:text-blue-600 transition-colors text-sm font-bold uppercase tracking-tight">
+            Propiedades
           </a>
-          <a href="#partners" className="text-gray-700 hover:text-purple-600 transition-colors text-sm font-semibold">
-            Socios
+          <a href="#team" className="text-gray-700 hover:text-blue-600 transition-colors text-sm font-bold uppercase tracking-tight">
+            Nuestro Equipo
           </a>
-          <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors text-sm font-semibold">
+          <a href="#regions" className="text-gray-700 hover:text-blue-600 transition-colors text-sm font-bold uppercase tracking-tight">
             Contacto
           </a>
         </div>
@@ -49,17 +49,17 @@ export default function NunexHeader() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t-2 border-purple-200 p-4 space-y-3">
-          <a href="#services" className="block text-gray-700 hover:text-purple-600 py-2 font-semibold">
-            Servicios
+        <div className="md:hidden bg-white border-t-2 border-blue-100 p-4 space-y-3">
+          <a href="#services" className="block text-gray-700 hover:text-blue-600 py-2 font-bold uppercase text-sm">
+            Verticales
           </a>
-          <a href="#ecosystem" className="block text-gray-700 hover:text-purple-600 py-2 font-semibold">
-            Ecosistema
+          <a href="#properties" className="block text-gray-700 hover:text-blue-600 py-2 font-bold uppercase text-sm">
+            Propiedades
           </a>
-          <a href="#partners" className="block text-gray-700 hover:text-purple-600 py-2 font-semibold">
-            Socios
+          <a href="#team" className="block text-gray-700 hover:text-blue-600 py-2 font-bold uppercase text-sm">
+            Nuestro Equipo
           </a>
-          <a href="#contact" className="block text-gray-700 hover:text-purple-600 py-2 font-semibold">
+          <a href="#regions" className="block text-gray-700 hover:text-blue-600 py-2 font-bold uppercase text-sm">
             Contacto
           </a>
           <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg mt-2">

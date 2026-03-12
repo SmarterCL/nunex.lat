@@ -12,16 +12,14 @@ export default function NunexHero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 leading-tight">
-          Expande tu Negocio
-          <br />
-          Internacionalmente
+        <h1 className="text-6xl md:text-8xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-6 leading-none">
+          Energía, Tecnología &<br />
+          <span className="text-blue-600">Activos Reales</span>
         </h1>
 
         {/* Description */}
-        <p className="text-xl text-gray-700 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
-          Consultoría especializada en trading de divisas, financiamiento empresarial, blockchain y expansión
-          internacional. 15+ años de experiencia gestionando $100M+ en proyectos.
+        <p className="text-xl text-gray-700 mb-10 leading-relaxed max-w-3xl mx-auto font-medium">
+          Lideramos proyectos de <span className="text-blue-600 font-bold">Energía Renovable</span>, infraestructura de <span className="text-indigo-600 font-bold">Datacenters</span> y adquisición de <span className="text-amber-600 font-bold">Real Estate</span> de gran escala. Conectamos capital estratégico con oportunidades críticas en <span className="font-bold">Chile y Argentina</span>.
         </p>
 
         {/* CTA Buttons */}
