@@ -38,7 +38,7 @@ export default function NunexTeam() {
     <section id="team" className="py-24 px-6 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-emerald-600 to-pink-600 bg-clip-text text-transparent mb-6">
             Nuestro Equipo
           </h2>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ export default function NunexTeam() {
               key={index}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-blue-100"
             >
-              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-100 to-purple-100">
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-blue-100 to-emerald-100">
                 <img
                   src={member.image || "/placeholder.svg"}
                   alt={member.name}

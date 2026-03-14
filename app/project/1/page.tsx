@@ -147,7 +147,7 @@ export default function Project1Page() {
               className="mb-6 aspect-video w-full rounded-lg border object-cover"
             />
             <div className="prose dark:prose-invert text-sm leading-relaxed">
-              <h1 className="text-xl font-regular mb-4">Game Changer: Revolutionary Gaming Interface</h1>
+              <div className="text-xl font-bold mb-4">Game Changer: Revolutionary Gaming Interface</div>
               <p className="mb-4">
                 A comprehensive redesign of a gaming platform that increased user engagement by 300% through innovative
                 interface design and seamless user experience.

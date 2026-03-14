@@ -29,14 +29,8 @@ export default function SidebarGabi() {
               href="/about"
               className="font-sans font-light text-[18px] text-foreground hover:text-primary transition-colors"
             >
-              About
+              Info
             </Link>
-            <a
-              href="#"
-              className="font-sans font-light text-[18px] text-foreground hover:text-primary transition-colors"
-            >
-              CV
-            </a>
             <a
               href="https://www.linkedin.com/in/gabriela-cecchin-b2933a120/"
               className="font-sans font-light text-[18px] text-foreground hover:text-primary transition-colors"
@@ -65,17 +59,11 @@ export default function SidebarGabi() {
         </p>
 
         <div className="flex space-x-4">
-          <a
-            href="#"
-            className="font-sans font-light text-[16px] md:text-[18px] text-foreground hover:text-primary transition-colors"
-          >
-            CV
-          </a>
           <Link
             href="/about"
             className="font-sans font-light text-[16px] md:text-[18px] text-foreground hover:text-primary transition-colors"
           >
-            About
+            Info
           </Link>
           <a
             href="https://www.linkedin.com/in/gabriela-cecchin-b2933a120/"

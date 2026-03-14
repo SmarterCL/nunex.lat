@@ -142,7 +142,7 @@ export default function Project3Page() {
               className="mb-6 aspect-video w-full rounded-lg border object-cover"
             />
             <div className="prose dark:prose-invert text-sm leading-relaxed">
-              <h1 className="text-xl font-regular mb-4">Mobile App Excellence</h1>
+              <div className="text-xl font-bold mb-4">Mobile App Excellence</div>
               <p className="mb-4">
                 Award-winning mobile application design that achieved 4.8 stars in app stores and over 1 million
                 downloads in the first month.

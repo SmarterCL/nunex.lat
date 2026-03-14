@@ -143,7 +143,7 @@ export default function Project2Page() {
               className="mb-6 aspect-video w-full rounded-lg border object-cover"
             />
             <div className="prose dark:prose-invert text-sm leading-relaxed">
-              <h1 className="text-xl font-regular mb-4">Brand Identity Revolution</h1>
+              <div className="text-xl font-bold mb-4">Brand Identity Revolution</div>
               <p className="mb-4">
                 Complete brand transformation for a tech startup that helped secure $2M in funding.
               </p>

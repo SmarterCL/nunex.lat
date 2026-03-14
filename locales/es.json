@@ -1,0 +1,20 @@
+{
+  "Hero": {
+    "title": "SmarterOS",
+    "subtitle": "Infraestructura Fintech Global"
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "name": "Tu Nombre",
+    "email": "Tu Email",
+    "subject": "Asunto",
+    "message": "Tu Mensaje",
+    "send": "Enviar Mensaje"
+  },
+  "Services": {
+    "title": "Nuestros Servicios"
+  },
+  "Casestudy8": {
+    "jokeTax": "The Joke Tax"
+  }
+}

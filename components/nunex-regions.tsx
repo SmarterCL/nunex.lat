@@ -7,7 +7,7 @@ export default function NunexRegions() {
     <section id="regions" className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-900 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-900 via-indigo-800 to-emerald-900 bg-clip-text text-transparent mb-6">
             Presencia Estratégica
           </h2>
           <p className="text-xl text-gray-700 font-bold mb-4">Conectando los polos comerciales de Chile y Argentina</p>
@@ -72,9 +72,9 @@ export default function NunexRegions() {
           </div>
 
           {/* Buenos Aires */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-purple-500 hover:scale-105 transition-transform">
+          <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-emerald-500 hover:scale-105 transition-transform">
             <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <MapPin className="text-purple-500" /> Buenos Aires
+              <MapPin className="text-emerald-500" /> Buenos Aires
             </h4>
             <div className="space-y-4">
               <div>
@@ -85,7 +85,7 @@ export default function NunexRegions() {
               </div>
               <div>
                 <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Contacto</p>
-                <p className="text-purple-600 font-bold text-lg">+54 9 11 1234 5678</p>
+                <p className="text-emerald-600 font-bold text-lg">+54 9 11 1234 5678</p>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function NunexRegions() {
         {/* Global Impact */}
         <div className="mt-20 p-12 bg-slate-900 rounded-3xl text-center text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 blur-3xl rounded-full -mr-32 -mt-32"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-600/20 blur-3xl rounded-full -ml-32 -mb-32"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-600/20 blur-3xl rounded-full -ml-32 -mb-32"></div>
           
           <h3 className="text-3xl font-bold mb-6 relative z-10">Más de 40 años operando en el Mercosur</h3>
           <p className="text-slate-400 max-w-2xl mx-auto mb-10 relative z-10">
@@ -110,8 +110,8 @@ export default function NunexRegions() {
               <p className="text-3xl font-bold text-amber-400">3</p>
               <p className="text-xs font-bold uppercase text-slate-500">Sedes Principales</p>
             </div>
-            <div className="border-l-2 border-purple-500 pl-4">
-              <p className="text-3xl font-bold text-purple-400">2</p>
+            <div className="border-l-2 border-emerald-500 pl-4">
+              <p className="text-3xl font-bold text-emerald-400">2</p>
               <p className="text-xs font-bold uppercase text-slate-500">Países Conectados</p>
             </div>
             <div className="border-l-2 border-emerald-500 pl-4">

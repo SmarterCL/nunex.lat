@@ -2,12 +2,12 @@
 
 export default function NunexFooter() {
   return (
-    <footer className="bg-gradient-to-b from-gray-900 via-blue-900 to-purple-900 text-white py-16 px-6">
+    <footer className="bg-gradient-to-b from-gray-900 via-blue-900 to-emerald-900 text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-purple-500/30">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-emerald-500/30">
           <div>
-            <h3 className="font-bold text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
+            <h3 className="font-bold text-2xl bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-4">
               NUNEX.LAT
             </h3>
             <p className="text-sm text-blue-200 font-medium">
@@ -46,22 +46,12 @@ export default function NunexFooter() {
             <ul className="space-y-2 text-sm text-blue-100">
               <li>
                 <a href="#" className="hover:text-white transition-colors font-medium">
-                  Quiénes Somos
+                  Nosotros
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-white transition-colors font-medium">
-                  Contacto
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors font-medium">
-                  Privacidad
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors font-medium">
-                  Términos
+                  Legales
                 </a>
               </li>
             </ul>

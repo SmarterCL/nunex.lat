@@ -14,7 +14,7 @@ export default function NunexServices() {
       icon: Server,
       title: "Datacenter & Minería",
       description: "Infraestructura avanzada para Datacenters y operaciones de Minería Bitcoin optimizada.",
-      gradient: "from-indigo-600 to-purple-400",
+      gradient: "from-indigo-600 to-emerald-400",
     },
     {
       icon: HandCoins,
@@ -59,7 +59,7 @@ export default function NunexServices() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-700 via-indigo-700 to-emerald-700 bg-clip-text text-transparent mb-6">
             Bloques Comerciales
           </h2>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto font-semibold">
@@ -74,7 +74,7 @@ export default function NunexServices() {
             return (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border-2 border-gray-100 hover:border-purple-300 transition-all hover:shadow-xl hover:-translate-y-2"
+                className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border-2 border-gray-100 hover:border-emerald-300 transition-all hover:shadow-xl hover:-translate-y-2"
               >
                 <div
                   className={`mb-6 w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shadow-lg`}

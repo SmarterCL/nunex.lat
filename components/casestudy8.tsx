@@ -1,17 +1,18 @@
-const Casestudy8 = ({ project }: { project?: any }) => {
-  interface ProjectData {
-    id: string
-    title: string
-    category: string
-    description?: string
-    image?: string
-    company?: string
-    industry?: string
-    location?: string
-    companySize?: string
-    website?: string
-    topics?: string
-  }
+export interface ProjectData {
+  id: string
+  title: string
+  category: string
+  description?: string
+  image?: string
+  company?: string
+  industry?: string
+  location?: string
+  companySize?: string
+  website?: string
+  topics?: string
+}
+
+const Casestudy8 = ({ project }: { project?: Partial<ProjectData> }) => {
 
   const defaultProject: ProjectData = {
     title: "How Mercury uses shadcn/ui to build their design system",
