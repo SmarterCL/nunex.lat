@@ -26,3 +26,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .pnpm-store/
+
+**/.pnpm-store/**
+**/node_modules/**
+**/.next/**
+**/.vercel/**
+**/.git/**

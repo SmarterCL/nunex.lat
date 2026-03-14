@@ -5,16 +5,16 @@ export default function NunexHero() {
     <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-white via-blue-50 to-white">
       <div className="max-w-4xl mx-auto text-center">
         {/* Subtitle */}
-        <div className="inline-block mb-6 px-4 py-2 bg-gradient-to-r from-blue-100 to-emerald-100 rounded-full border border-emerald-300">
-          <p className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
+        <div className="inline-block mb-6 px-4 py-2 bg-slate-100 rounded-full border border-slate-300">
+          <p className="text-sm font-semibold text-slate-700">
             Plataforma Global de Consultoría
           </p>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-6xl md:text-8xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-6 leading-none">
+        <h1 className="text-6xl md:text-8xl font-black text-slate-900 mb-6 leading-none">
           Energía, Tecnología &<br />
-          <span className="text-blue-600">Activos Reales</span>
+          <span className="text-slate-600">Activos Reales</span>
         </h1>
 
         {/* Description */}
@@ -24,10 +24,10 @@ export default function NunexHero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <button className="bg-gradient-to-r from-blue-600 to-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-emerald-500/50 transition-all hover:scale-105">
+          <button className="bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold hover:bg-slate-800 transition-all hover:scale-105">
             Conocer Más
           </button>
-          <button className="border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-all hover:shadow-lg">
+          <button className="border-2 border-slate-900 text-slate-900 px-8 py-4 rounded-xl font-semibold hover:bg-slate-50 transition-all hover:shadow-lg">
             Contactar
           </button>
         </div>

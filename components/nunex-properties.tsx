@@ -9,7 +9,7 @@ export default function NunexProperties() {
       country: "Chile",
       title: "Edificios de Gran Escala",
       description: "Asesoría en adquisición de activos corporativos y residenciales de lujo en el centro financiero.",
-      image: "/modern_property_santiago_chile_1773329886097.png",
+      image: "/property_santiago.png",
       tag: "Real Estate"
     },
     {
@@ -17,7 +17,7 @@ export default function NunexProperties() {
       country: "Argentina",
       title: "Bodegas & Viñedos",
       description: "Desarrollo de proyectos vitivinícolas premium con infraestructura de vanguardia.",
-      image: "/mendoza_winery_luxury_resort_1773330047291.png",
+      image: "/property_mendoza.png",
       tag: "Agribusiness"
     },
     {
@@ -25,7 +25,7 @@ export default function NunexProperties() {
       country: "Argentina",
       title: "Propiedades Icónicas",
       description: "Gestión de compra de propiedades históricas y modernas de gran tamaño en Puerto Madero y Recoleta.",
-      image: "/modern_property_buenos_aires_argentina_1773329903503.png",
+      image: "/property_buenos_aires.png",
       tag: "Luxury Living"
     }
   ]
@@ -36,7 +36,7 @@ export default function NunexProperties() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
             <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
-              Portafolio de <span className="text-blue-600 underline decoration-blue-200">Activos Reales</span>
+              Portafolio de <span className="text-slate-600 underline decoration-slate-200">Activos Reales</span>
             </h2>
             <p className="text-xl text-gray-600 font-medium leading-relaxed">
               Especialistas en la adquisición y gestión de propiedades de gran escala en los mercados más dinámicos del Cono Sur.
