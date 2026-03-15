@@ -9,6 +9,7 @@ import NunexContact from "@/components/nunex-contact"
 import NunexFooter from "@/components/nunex-footer"
 
 import NunexProperties from "@/components/nunex-properties"
+import NeuronalIntelligence from "@/components/neuronal-intelligence"
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
       <NunexHero />
       <NunexServices />
       <NunexProperties />
+      <NeuronalIntelligence />
       <NunexTeam />
       <NunexEcosystem />
       <NunexRegions />
