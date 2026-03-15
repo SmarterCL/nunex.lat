@@ -10,6 +10,7 @@ import NunexFooter from "@/components/nunex-footer"
 
 import NunexProperties from "@/components/nunex-properties"
 import NeuronalIntelligence from "@/components/neuronal-intelligence"
+import NunexDeploymentLevels from "@/components/nunex-deployment-levels"
 
 export default function Page() {
   return (
@@ -19,6 +20,7 @@ export default function Page() {
       <NunexServices />
       <NunexProperties />
       <NeuronalIntelligence />
+      <NunexDeploymentLevels />
       <NunexTeam />
       <NunexEcosystem />
       <NunexRegions />
