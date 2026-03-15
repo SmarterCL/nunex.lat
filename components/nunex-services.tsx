@@ -1,88 +1,80 @@
 "use client"
 
-import { Wind, Server, HandCoins, Building2, Coins, Calculator, Scale, ShieldCheck } from "lucide-react"
+import { Cpu, Brain, Network, Zap, ShieldCheck, Globe, Database, Scale } from "lucide-react"
 
 export default function NunexServices() {
-  const services = [
-    {
-      icon: Wind,
-      title: "Energía Renovable",
-      description: "Desarrollo y gestión de Parques Eólicos y proyectos sustentables de alto impacto ambiental.",
-      gradient: "from-blue-600 to-cyan-400",
-    },
-    {
-      icon: Server,
-      title: "Datacenter & Minería",
-      description: "Infraestructura avanzada para Datacenters y operaciones de Minería Bitcoin optimizada.",
-      gradient: "from-indigo-600 to-emerald-400",
-    },
-    {
-      icon: HandCoins,
-      title: "Asesoría ANR",
-      description: "Gestión experta en Aportes No Reembolsables para el crecimiento empresarial en Argentina.",
-      gradient: "from-green-600 to-emerald-400",
-    },
-    {
-      icon: Building2,
-      title: "Real Estate & Bodegas",
-      description: "Compra de propiedades de gran tamaño y desarrollo de bodegas boutique en Mendoza y Chile.",
-      gradient: "from-amber-600 to-orange-400",
-    },
-    {
-      icon: Coins,
-      title: "Venta de Oro",
-      description: "Operaciones seguras de compra y venta de oro físico con respaldo internacional.",
-      gradient: "from-yellow-600 to-amber-500",
-    },
-    {
-      icon: Calculator,
-      title: "Operaciones Contables",
-      description: "Servicios contables integrales para empresas con operaciones binacionales (CL/AR).",
-      gradient: "from-slate-700 to-slate-500",
-    },
+  const divisions = [
     {
       icon: Scale,
-      title: "Asesoría Tributaria",
-      description: "Optimización fiscal y cumplimiento tributario para estructuras corporativas complejas.",
-      gradient: "from-blue-800 to-blue-500",
+      title: "Neuronal Silicio (Suiza)",
+      description: "Precisión matemática y legal aplicada al procesamiento de facturas, RUTs y cumplimiento de la Ley REP. La inteligencia fría y exacta del viejo continente.",
+      gradient: "from-blue-600 to-indigo-700",
+      tag: "Precisión"
     },
     {
-      icon: ShieldCheck,
-      title: "Ciberseguridad",
-      description: "Protección de infraestructura crítica y activos digitales bajo la dirección de Pedro Zaffuto.",
-      gradient: "from-red-600 to-rose-400",
+      icon: Brain,
+      title: "Cortical Hardware (Australia)",
+      description: "Integración con computación biológica. Inteligencia orgánica, adaptativa y de ultra bajo consumo para el futuro de la orquestación autónoma.",
+      gradient: "from-emerald-600 to-teal-700",
+      tag: "Futuro"
     },
+    {
+      icon: Network,
+      title: "Nunex.lat (Latam)",
+      description: "Plataforma de despliegue y brazo ejecutor. Gestión de infraestructura local, VPS y nodos de baja latencia para el mercado sudamericano.",
+      gradient: "from-amber-500 to-orange-600",
+      tag: "Ejecución"
+    },
+    {
+      icon: Database,
+      title: "Smarter Labs (I+D)",
+      description: "Nuestra división de Research & Development. Donde el LightRAG y la orquestación MCP evolucionan hacia la inteligencia soberana.",
+      gradient: "from-slate-800 to-slate-900",
+      tag: "I+D"
+    }
   ]
 
   return (
-    <section id="services" className="py-24 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section id="services" className="py-32 px-6 bg-slate-50">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-700 via-indigo-700 to-emerald-700 bg-clip-text text-transparent mb-6">
-            Bloques Comerciales
+        <div className="text-center mb-24">
+          <h2 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tighter">
+            INFRAESTRUCTURA <br />
+            <span className="text-slate-400">DISTRIBUIDA.</span>
           </h2>
-          <p className="text-xl text-gray-700 max-w-2xl mx-auto font-semibold">
-            Verticales especializadas en activos reales y tecnología crítica
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+            Tres continentes conectados bajo una sola arquitectura de soberanía digital.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => {
-            const Icon = service.icon
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {divisions.map((division, index) => {
+            const Icon = division.icon
             return (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-2xl border-2 border-gray-100 hover:border-emerald-300 transition-all hover:shadow-xl hover:-translate-y-2"
+                className="group relative bg-white p-8 rounded-[2.5rem] border border-slate-200 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/10"
               >
                 <div
-                  className={`mb-6 w-14 h-14 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center shadow-lg`}
+                  className={`mb-8 w-16 h-16 bg-gradient-to-br ${division.gradient} rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500`}
                 >
-                  <Icon size={28} className="text-white" />
+                  <Icon size={32} className="text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{service.description}</p>
+                <div className="inline-block mb-4 px-3 py-1 bg-slate-100 rounded-full">
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">
+                    {division.tag}
+                  </p>
+                </div>
+                <h3 className="text-2xl font-black text-slate-900 mb-4 leading-tight">{division.title}</h3>
+                <p className="text-slate-600 leading-relaxed font-medium">{division.description}</p>
+                
+                <div className="mt-8 pt-6 border-t border-slate-50 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <button className="flex items-center gap-2 text-sm font-bold text-slate-900">
+                    Saber más <Zap size={14} className="text-amber-500 h-4 w-4 fill-amber-500" />
+                  </button>
+                </div>
               </div>
             )
           })}

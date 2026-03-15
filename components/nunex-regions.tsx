@@ -1,124 +1,88 @@
 "use client"
 
-import { MapPin, Users, Award, TrendingUp } from "lucide-react"
+import { MapPin, Globe, Cpu, Zap } from "lucide-react"
 
 export default function NunexRegions() {
+  const regions = [
+    {
+      city: "Suiza (Silicio)",
+      concept: "Neuronal Core",
+      address: "Zug / Zurich - Precise Mathematics",
+      detail: "Procesamiento exacto, RUTs y Ley REP",
+      border: "border-blue-500"
+    },
+    {
+      city: "Australia (Cortical)",
+      concept: "Adaptive Core",
+      address: "Melbourne - Biological Computing",
+      detail: "Hardware orgánico y ultra bajo consumo",
+      border: "border-teal-500"
+    },
+    {
+      city: "Chile (Nunex)",
+      concept: "Execution Hub",
+      address: "Santiago - Deployment & Ops",
+      detail: "Infraestructura local y VPS Hostinger",
+      border: "border-amber-500"
+    }
+  ]
+
   return (
-    <section id="regions" className="py-24 px-6 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent mb-6">
-            Presencia Estratégica
+    <section id="regions" className="py-32 px-6 bg-slate-900 text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-24 text-center md:text-left">
+          <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
+            PRESENCIA <br />
+            <span className="text-slate-500">ESTRATÉGICA.</span>
           </h2>
-          <p className="text-xl text-gray-700 font-bold mb-4">Conectando los polos comerciales de Chile y Argentina</p>
-          <div className="inline-block bg-slate-800 text-white px-6 py-2 rounded-full text-lg font-bold shadow-lg">
-            hola@nunex.lat
-          </div>
+          <p className="text-xl text-slate-400 max-w-2xl font-medium">
+            Conectando los polos de vanguardia tecnológica con el brazo ejecutor en Latinoamérica.
+          </p>
         </div>
 
         {/* Global Map Visual */}
-        <div className="mb-24 relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-          <div className="aspect-[21/9] bg-slate-900">
-            <img 
-              src="/map_commercial_network_realistic.png" 
-              alt="Eje Santiago - Mendoza - Buenos Aires" 
-              className="w-full h-full object-cover opacity-90"
-            />
+        <div className="mb-24 relative rounded-[3rem] overflow-hidden border border-slate-800 shadow-2xl">
+          <div className="aspect-[21/9] bg-slate-800 relative">
+             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-800 via-slate-900 to-black"></div>
+             {/* Simple representation of global connection */}
+             <div className="absolute inset-0 flex items-center justify-center opacity-20">
+               <Globe size={400} className="text-white animate-pulse" />
+             </div>
+             <div className="absolute inset-0 flex items-center justify-around px-20">
+               <div className="flex flex-col items-center gap-2">
+                 <div className="w-4 h-4 bg-blue-500 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.8)]"></div>
+                 <p className="text-[10px] font-black uppercase tracking-widest text-blue-400">Silicio (CH)</p>
+               </div>
+               <div className="flex flex-col items-center gap-2">
+                 <div className="w-4 h-4 bg-amber-500 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.8)]"></div>
+                 <p className="text-[10px] font-black uppercase tracking-widest text-amber-400">Execution (CL)</p>
+               </div>
+               <div className="flex flex-col items-center gap-2">
+                 <div className="w-4 h-4 bg-teal-500 rounded-full shadow-[0_0_20px_rgba(20,184,166,0.8)]"></div>
+                 <p className="text-[10px] font-black uppercase tracking-widest text-teal-400">Cortical (AU)</p>
+               </div>
+             </div>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex flex-col justify-end p-12">
-            <h3 className="text-3xl font-bold text-white mb-2">Eje Comercial Transandino</h3>
-            <p className="text-blue-200 font-medium">Cobertura integral en los centros de decisión más importantes de la región.</p>
+          <div className="absolute bottom-12 left-12">
+            <h3 className="text-3xl font-black mb-2">Red de Inteligencia Soberana</h3>
+            <p className="text-slate-400 font-medium tracking-tight">Menos de 1.000 USD de costo operativo distribuido.</p>
           </div>
         </div>
 
-        {/* Cities Grid */}
+        {/* Regions Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Santiago */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-blue-500 hover:scale-105 transition-transform">
-            <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <MapPin className="text-slate-700" /> Santiago
-            </h4>
-            <div className="space-y-4">
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Dirección Física</p>
-                <p className="text-gray-800 font-semibold leading-snug">
-                  Conde del Maule 4364, Depto #26<br />Estación Central, Santiago
-                </p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Contacto</p>
-                <p className="text-blue-600 font-bold text-lg">+56 9 7954 0471</p>
+          {regions.map((region, index) => (
+            <div key={index} className={`p-10 rounded-[2.5rem] bg-slate-800/50 border-t-2 ${region.border} hover:bg-slate-800 transition-colors`}>
+              <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4">{region.concept}</p>
+              <h4 className="text-3xl font-black mb-2 flex items-center gap-3">
+                <MapPin className="text-white h-6 w-6" /> {region.city}
+              </h4>
+              <p className="text-slate-200 font-bold mb-6 text-sm italic">{region.address}</p>
+              <div className="pt-6 border-t border-slate-700">
+                <p className="text-slate-400 text-sm font-medium">{region.detail}</p>
               </div>
             </div>
-          </div>
-
-          {/* Mendoza */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-amber-500 hover:scale-105 transition-transform">
-            <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <MapPin className="text-slate-700" /> Mendoza
-            </h4>
-            <div className="space-y-4">
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Dirección Física</p>
-                <p className="text-gray-800 font-semibold leading-snug">
-                  Sarmiento 123, Edificio Plaza<br />Centro, Mendoza
-                </p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Contacto</p>
-                <p className="text-slate-700 font-bold text-lg">+54 9 2622 51-7297</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Buenos Aires */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-emerald-500 hover:scale-105 transition-transform">
-            <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <MapPin className="text-slate-700" /> Buenos Aires
-            </h4>
-            <div className="space-y-4">
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Dirección Física</p>
-                <p className="text-gray-800 font-semibold leading-snug">
-                  Av. del Libertador 1000, Piso 12<br />CABA, Buenos Aires
-                </p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-extrabold mb-1">Contacto</p>
-                <p className="text-slate-700 font-bold text-lg">+54 9 11 2656-9822</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Global Impact */}
-        <div className="mt-20 p-12 bg-slate-900 rounded-3xl text-center text-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-slate-700/20 blur-3xl rounded-full -mr-32 -mt-32"></div>
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-slate-600/20 blur-3xl rounded-full -ml-32 -mb-32"></div>
-          
-          <h3 className="text-3xl font-bold mb-6 relative z-10">Más de 40 años operando en el Mercosur</h3>
-          <p className="text-slate-400 max-w-2xl mx-auto mb-10 relative z-10">
-            Nuestra red de socios estratégicos y presencia física nos permite garantizar la seguridad jurídica y operativa de cada gestión en ambos países.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
-            <div className="border-l-2 border-blue-500 pl-4">
-              <p className="text-3xl font-bold text-blue-400">40+</p>
-              <p className="text-xs font-bold uppercase text-slate-500">Años de Trayectoria</p>
-            </div>
-            <div className="border-l-2 border-amber-500 pl-4">
-              <p className="text-3xl font-bold text-amber-400">3</p>
-              <p className="text-xs font-bold uppercase text-slate-500">Sedes Principales</p>
-            </div>
-            <div className="border-l-2 border-emerald-500 pl-4">
-              <p className="text-3xl font-bold text-emerald-400">2</p>
-              <p className="text-xs font-bold uppercase text-slate-500">Países Conectados</p>
-            </div>
-            <div className="border-l-2 border-emerald-500 pl-4">
-              <p className="text-3xl font-bold text-emerald-400">∞</p>
-              <p className="text-xs font-bold uppercase text-slate-500">Oportunidades</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
