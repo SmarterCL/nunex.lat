@@ -10,7 +10,7 @@ export default function NeuronalIntelligence() {
     { name: "Odoo ERP", detail: "Gestión Empresarial" },
     { name: "n8n", detail: "Automatización de Flujos" },
     { name: "OpenClaw AI", detail: "Cerebro Neuronal" },
-    { name: "VPS Cloud", detail: "Infraestructura Hostinger" },
+    { name: "VPS Cloud", detail: "Infraestructura Hostinger", image: "/vps_datacenter.png" },
     { name: "Economic Graph", detail: "Red de Valor Digital" },
   ]
 
@@ -97,7 +97,7 @@ export default function NeuronalIntelligence() {
               <div className="flex justify-between items-start mb-8">
                 <div>
                   <h3 className="text-2xl font-black text-white tracking-tighter">Estructura de Equity</h3>
-                  <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">Smarter SPA / Mercado Latam</p>
+                  <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">Smarter SpA / Mercado Latam</p>
                 </div>
                 <div className="px-3 py-1 bg-amber-500 text-slate-900 rounded-lg text-[10px] font-black uppercase tracking-widest">
                   Investable
@@ -107,7 +107,7 @@ export default function NeuronalIntelligence() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-4 p-4 bg-slate-900/50 rounded-2xl border border-slate-700/50">
                    <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 font-black text-xs">01</div>
-                   <p className="text-sm font-bold text-slate-300">Smarter SPA (Holding de Operaciones)</p>
+                   <p className="text-sm font-bold text-slate-300">Smarter SpA (Holding de Operaciones)</p>
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-slate-900/50 rounded-2xl border border-slate-700/50 ml-6">
                    <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 font-black text-xs">02</div>
